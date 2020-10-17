@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.fond{
+  background-color: #eee5dc;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.bande-bleu{
+   background-color: #d1dfec;
+   width: 100vw;
+   height: 33.33%;
+   position: relative;
+}
+
+.slide-1{
+  left: 0%;
+  animation: slide 0.5s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide-2{
+  left: 0%;
+  animation: slide 0.7s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide-3{
+  left: 0%;
+  animation: slide 0.9s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide-reverse-1{
+  left: 100%;
+  animation: slide-reverse 0.5s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide-reverse-2{
+  left: 100%;
+  animation: slide-reverse 0.7s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide-reverse-3{
+  left: 100%;
+  animation: slide-reverse 0.9s linear;
+  animation-fill-mode:forwards;
+}
+
+.slide_button{
+  background: teal;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 3rem;
+  opacity: 0.25;
+  position: absolute;
+  top: calc(50% - 24px);
+  transition: opacity 0.25s;
+  width: 3rem;
+  z-index: 1;
+}
+
+.women{
+  left: 5px;
+}
+
+.men{
+  right: 5px;
+}
+
+.slide_button:hover{
+  opacity: 0.5;
+}
+
+
+@keyframes slide {
+  100% {left: 100%}
+}
+
+@keyframes slide-reverse {
+  100% {left: 0%}
+}
+
