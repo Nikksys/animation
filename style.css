@@ -8,7 +8,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  position: relative;
+  /* position: relative; */
 }
 
 
@@ -93,3 +93,70 @@ body{
   100% {left: 0%}
 }
 
+
+/* /////// product part /////// */
+
+/* coul 1 homme => #ebe9e3
+  coul 2 homme => #e1ddd5
+  coul 3 homme => #d7d1c5
+  bout => #cdc6b7
+
+  coul 1 femme => #f9f4e5
+  coul 2 femme => #efebcc
+  coul 3 femme => #ebe3c1
+  bout => #e4dcb3
+   */
+
+.products{
+  width: 55%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.solo-product{
+  width: 80%;
+  height: 100%;
+  background: aqua;
+  display: flex;
+}
+
+.show-products{
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.show-products img{
+  position: relative;
+}
+
+.prod-1{
+  background-color: #ebe9e3;
+}
+
+.prod-2{
+  background-color: #e1ddd5;
+}
+
+.prod-3{
+  background-color: #d7d1c5;
+}
+
+.liens{
+  background-color: #cdc6b7;
+  width: 20%;
+}
+
+.move-right{
+  animation: move-right 0.5s linear;
+  animation-fill-mode:forwards;
+}
+
+@keyframes move-right {
+  100% {transform: translateX(110%)}
+}
